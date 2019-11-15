@@ -1,0 +1,508 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,900&display=swap');
+*{
+  font-family: 'Roboto', sans-serif;
+}
+
+/*
+@-webkit-keyframes firstsquare {
+  0% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+            box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translateZ(50px);
+            transform: translateZ(50px);
+    -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+            box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+  }
+}
+@keyframes firstsquare {
+  0% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+            box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translateZ(50px);
+            transform: translateZ(50px);
+    -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+            box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+  }
+}*/
+
+
+html,body{
+  scroll-behavior: smooth;
+  border: 0;
+  margin:0;
+  
+}
+
+.drawline{
+  height:3px;
+  margin-left:120px;
+  width:130px;
+  background-color:black;
+  border-radius:100px;
+}
+
+#map{
+  height:380px;
+  width:100%;
+}
+
+#bannertext h1{
+  font-size:50px!important;
+  font-weight:bold!important;
+}
+
+
+#mainbanner{
+  background-image: url('../img/banner.jpg')!important;
+  background-size:100% 100%;
+  height:600px!important;
+
+}
+.mtbanner{
+  margin-top:65px;
+}
+.mymobile{
+  margin-top:60px;
+  margin-bottom:60px;
+}
+
+
+
+.text-orange{
+  color:#eb6d19!important;
+}
+
+.bg-orange{
+  background-color:#eb6d19;
+  color:white;
+}
+
+h1{
+  font-size:60px!important;
+  font-weight:800;
+}
+
+
+p{
+  font-size:13px;
+}
+
+.py-10{
+  padding-top:100px;
+  padding-bottom:100px;
+}
+
+
+
+.firstsquare{
+    height:450px;
+    width:100%;
+    background-color:#eb6d19;
+
+}
+
+.firstsquare:hover,.secondsquare:hover, .thirdsquare:hover{
+transform:scale(1.07);
+
+}
+.firstsquare, .secondsquare, .thirdsquare{
+  -webkit-transition: transform 0.5s ease-out;
+  -moz-transition: transform 0.5s ease-out;
+  -o-transition: transform 0.5s ease-out;
+  transition: transform 0.5s ease-out;
+
+}
+.secondsquare{
+  height:450px;
+  width:100%;
+  background-color:#20292c;
+  margin-top:80px;
+  margin-left:-10px;
+  position:relative;
+  margin-right:5px;
+
+
+}
+
+
+
+.secondsquare h2{
+  color:orange;
+  font-size:20px;
+}
+
+.secondsquare p {
+  color:white;
+}
+
+#gestaosection h1, h3{
+  color:#eb6d19!important;
+}
+
+.thirdsquare{
+  background-image:url('../img/banner_sobre.jpg');
+  height:450px;
+  width:100%;
+  background-size:100% 100%;
+}
+
+.bg-grey{
+  background-color:#eef1f3;
+}
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 15px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */ /* Set a background color */
+  color: rgb(187, 169, 169); /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 15px; /* Increase font size */
+  background-color:#555;
+}
+
+/*#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+/*}*/
+
+h4{
+  margin-top:100px;
+}
+
+.bg-orange h4{
+  margin-top:40px;
+  margin-bottom:20px;
+}
+
+.bgcontact{
+  background-image:url('../img/contato.jpg');
+  height:600px;
+  width:100%!important;
+  background-size:100% 100%;
+}
+#relative{
+  display:none!important;
+}
+
+#socialmedias i{
+  font-size:30px!important;
+  margin-left:5px;
+  margin-right:5px;
+}
+
+#funcionalidadesdesktop{
+  display:none;
+
+}
+
+.my-30{
+  margin-top:50px;
+}
+
+.mbcontact{
+  margin-top:20px!important;
+  margin-bottom:100px!important;
+}
+
+.myespecial{
+  margin-top:100px!important;
+  margin-bottom:100px!important;
+}
+
+@media (min-width:1300px){
+  #relative{
+    display:block!important;
+    position:absolute;
+    left:480px;
+    top:692px;
+  }
+
+
+}
+
+@media (min-width:1400px){
+  #relative{
+    display:block!important;
+    position:absolute;
+    left:520px;
+    top:692px;
+  }
+}
+
+@media(min-width:1500px){
+  #relative{
+  left:600px;
+  top:692px;
+}
+}
+
+@media (min-width:1600px){
+#relative{
+  left:38%;
+  top:692px;
+}
+}
+
+@media(min-width:1800px){
+  #relative{
+    left:40%;
+    top:692px;
+  }
+}
+
+@media (min-width:2000px){
+  #relative{
+    left:41%;
+    top:692px;
+  }
+}
+
+@media (min-width:2200px){
+  #relative{
+    left:42%;
+    top:692px;
+  }
+}
+
+
+
+@media(min-width:768px){
+  #funcionalidadesdesktop{
+    display:block;
+
+
+  }
+
+
+  #funcionalidadesmobile{
+    display:none;
+  }
+
+  .mobile-break{
+    display:none!important;
+  }
+
+
+  #mainbanner{
+    background-image: url('../img/tablet_sobre.jpg')!important;
+    background-size:100% 100%;
+    height:600px!important;
+  
+  }
+
+
+}
+
+@media(min-width:1023px){
+  #mainbanner{
+    background-image: url('../img/banner.jpg')!important;
+    background-size:100% 100%;
+    height:600px!important;
+  
+  }
+}
+
+@media(max-width:1026px){
+  #funcionalidadesdesktop{
+  margin-left:45px!important;
+}
+}
+
+@media(max-width:769px){
+  #funcionalidadesdesktop h1{
+    font-size:45px!important;
+  }
+  #funcionalidadesdesktop h2{
+    font-size:15px!important;
+  }
+
+  #funcionalidadesdesktop p{
+    font-size:10px!important;
+  }
+}
+
+@media(max-width:768px){
+  #gestaosection h3{
+    margin-top:60px;
+  }
+
+  .breakthis{
+    display:inline-flex!important;
+  }
+
+  .breakthis2{
+    display:inline-flex!important;
+  }
+
+  .sizedown h1{
+    font-size:40px!important;
+  }
+
+
+}
+
+@media(max-width:425px){
+  .breakthis2{
+  display:block!important;
+}
+}
+
+@media(max-width:325px){
+  .breakthis{
+    display:block!important;
+  }
+}
+
+@media (min-width:768px){
+  .mb-15{
+    margin-bottom:150px;
+  }
+
+
+  .px-10{
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  .my-30{
+    margin-top:300px;
+
+  }
+
+  h4{
+    margin-bottom: 50px;
+  }
+
+
+}
+
+.borda{
+  border:1px solid red;
+}
+
+#contactsquare{
+  background-color: #20292c;
+}
+
+
+
+
+.mtcontact{
+  margin-top:500px!important;
+}
+
+.footer{
+  background-color:#20292c;
+  height:80px;
+  display:flex;
+  color:white
+}
+
+.footer a{
+  color:white;
+}
+
+@media (min-width:730px){
+  .dropdown{
+    margin-top:80px;
+  }
+
+  .ptcontact{
+    padding-top:300px;
+  }
+}
+@media (min-width:800px){
+  .dropdown{
+    margin-top:0px;
+  }
+}
+
+@media (max-width:765px){
+  #mainbanner{
+    background-image: url('../img/banner.jpg')!important;
+    background-size:100% 100%;
+    height:600px!important;
+
+  }
+
+  .myespecial{
+    margin-top:100px!important;
+    margin-bottom:0px!important;
+
+  }
+
+  .elemento{
+    height:120px!important;
+  }
+
+  .mtcontact{
+    margin-top:900px!important;
+  }
+
+  #mainbanner{
+    background-image: url('../img/mobile_sobre.jpg')!important;
+    background-size:100% 100%;
+    height:356px!important;
+  
+  }
+  
+}
+
+@media(max-width:760px){
+  .mtcontact{
+    margin-top:200px!important;
+  }
+
+  #contact{
+    height:900px;
+  }
+
+  .bgcontact{
+    background:#20292c;
+  }
+  
+}
+
+
+@media (min-width:769px){
+
+li a {
+  float: left!important;
+  display: block!important;
+  text-align: center!important;
+  padding: 30px 15px!important;
+  text-decoration: none!important;
+  border-bottom: 3px solid transparent!important;
+}
+
+li a:hover {
+  border-bottom: 3px solid #eb6d19!important;
+}
+
+nav.navbar.navbar-expand-lg.navbar-light{
+  padding: 0px 16px!important;
+}
+
+}
+
+
+.hideme
+{
+    opacity:0;
+}
+
+.hideme2{
+  opacity:0;
+}
